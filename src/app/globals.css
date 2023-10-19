@@ -27,7 +27,7 @@ body {
 }
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto mb-16 px-8 py-4 sm:px-16;
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto mb-16 px-1 py-4 sm:px-16;
 }
 
 .main {

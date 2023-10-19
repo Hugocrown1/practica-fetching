@@ -9,7 +9,6 @@ const ProductCard = ({ product }) => {
   const {
     title,
     thumbnail,
-
     price,
     discountPercentage,
     rating,
@@ -19,10 +18,10 @@ const ProductCard = ({ product }) => {
   const router = useRouter();
 
   return (
-    <section className="flex justify-end space-x-4 rounded-lg bg-[#212529] m-2  w-full h-[85%]">
-      <div className=" w-[42%]   rounded-md ">
+    <section className="flex flex-col items-center lg:flex-row justify-end space-x-4 rounded-lg bg-[#212529] m-2  w-full sm:w-[60%] md:w-full h-[85%]">
+      <div className=" w-[80%] lg:w-[42%] rounded-md ">
         <img
-          className="-translate-y-2 rounded-lg"
+          className=" rounded-lg"
           alt="product image"
           width={300}
           height={200}
@@ -31,7 +30,7 @@ const ProductCard = ({ product }) => {
         />
       </div>
 
-      <div className=" flex flex-col space-y-1 py-2 px-2 w-[58%]">
+      <div className="flex flex-col space-y-1 py-4 px-4 lg:py-2 lg:px-2 w-full lg:w-[58%]">
         <p className="text-xl text-left font-semibold  line-clamp-1">{title}</p>
         <p className="text-[#adb5bd]">
           {brand}, {category}

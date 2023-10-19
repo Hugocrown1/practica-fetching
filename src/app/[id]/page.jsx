@@ -29,7 +29,7 @@ const ProductPage = async ({ params: { id } }) => {
       <div className="flex flex-row space-x-4 ">
         <img className="rounded-md h-[80%] w-[80%]" src={thumbnail} />
 
-        <div className="flex flex-col ">
+        <div className="flex flex-col py-4 ">
           <p className="text-2xl">{description}</p>
           <p className="text-blue-500 font-medium">Marca: {brand}</p>
 
@@ -47,7 +47,7 @@ const ProductPage = async ({ params: { id } }) => {
 
           <p>{stock} en stock</p>
 
-          <div className="flex flex-row space-x-2 items-end h-full">
+          <div className="flex flex-row space-x-2 items-end h-full ">
             <button className="bg-purple-500 text-white px-4 py-2 rounded-full transition duration-200 ease-in-out hover:bg-purple-700 active:bg-purple-900 focus:outline-none">
               Comprar
             </button>
